@@ -1,0 +1,41 @@
+body{
+    text-align: center
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background: #eee;
+    display: inline-block;
+    /*display para só ocupara o espaço dele*/
+    padding: 40px;
+    /*padding é margem do quadrado para dentro*/
+    font-size: 40px;
+    margin: 5px;
+    /*margin é para fora do conteúdo*/
+    cursor: pointer;
+    /*cursor cria a mãozinha*/
+    /*Dá para ver toda a estrutura quando, vai na página,
+     aperta f12, vai em body, clica em div id e vê a estrutura
+      de margin, border, padding e conteúdo*/
+    /*Dentro do EDGE dá para editar através do f12, inspect e editar esses atributos */
+    /*para mudar instatânemante e achar a melhor formatação*/
+    color: #eee;
+    /*Coloca a cor do texto igual, para "desaparecer"*/
+
+}
+
+.jogador, .vencedor{
+    font-size: 30px;
+    margin-top:10px;
+/*Isso é uma classe, o que significa? Que todas as estruturas que forem nomeadas*/
+/*com essa classe, terão exatamente essas característica*/
+}
+
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    cursor: pointer
+}

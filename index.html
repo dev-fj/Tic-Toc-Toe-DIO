@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<!-- Essa declaração deve ser incluída no início de um arquivo HTML para indicar aos navegadores web como interpretar o código HTML.
+Documento deve ser interpretado usando as regras e recursos do HTML5.-->
+
+<html lang="pt-br">
+<!-- Define a linguagem e melhor indexação -->
+
+<head>
+<!--#tags de configuração-->
+    <title>
+        Jogo da Velha
+    </title>
+    <!-- Esse title é o titulo que aparece na aba da págica -->
+    <meta charset="UTF-8">
+    <!--  UTF-8 é amplamente recomendado e considerado uma prática padrão para documentos HTML, 
+        pois ele suporta uma ampla gama de caracteres e é compatível com a maioria dos navegadores e 
+        sistemas operacionais atualmente em uso. -->
+    <link rel="stylesheet" href="./src/css/estilo.css">
+<!--  usada para vincular um arquivo de estilo externo a um documento HTML
+      #para renderizar e injetar o arquivo css-->
+
+
+</head>
+
+<body>
+
+<h1>
+    Joga da Velha
+</h1>
+<!-- Esse h1 está relacionado a texto escrito na página,  representa o cabeçalho principal-->
+
+<div>
+<!--    #gerar conteúdo-->
+<!--    #representar quadrados#
+A tag <div> é um elemento genérico de divisão em HTML. 
+    Ela é usada para criar uma seção ou contêiner para agrupar e organizar outros elementos HTML em um bloco separado.-->
+    <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+
+
+<!--<div>: Cria um elemento <div>, que é um bloco de divisão genérico em HTML.
+id="1": Define o ID do elemento como "1". O ID é um identificador único usado para referenciar o elemento por meio de CSS ou JavaScript.
+class="quadrado": Define a classe do elemento como "quadrado". A classe é usada para aplicar estilos CSS ou selecionar o elemento por meio de JavaScript.
+onclick="escolherQuadrado(this.id)": Define um evento de clique no elemento. Quando o elemento é clicado, a função "escolherQuadrado" é chamada, passando o ID do elemento como argumento. O this.id refere-se ao ID do elemento em que o evento ocorreu.
+No código fornecido, o valor do conteúdo do elemento é "-", o que provavelmente representa um marcador ou estado inicial. 
+ 
+  -->
+
+</div>
+
+<div>
+    <!--    #gerar conteúdo-->
+    <!--    #representar quadrados#-->
+    <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+
+</div>
+
+<div>
+    <!--    #gerar conteúdo-->
+    <!--    #representar quadrados#-->
+    <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+
+
+<!-- CLASSE EM HTML: 
+    Em HTML, uma classe é um atributo usado para identificar um ou mais elementos e aplicar estilos 
+    ou comportamentos específicos a esses elementos. -->
+
+<!-- ELEMENTO EM HTML:
+Elementos são as peças individuais que compõem uma página HTML e representam diferentes tipos de conteúdo e funcionalidad 
+Cada elemento HTML é representado por uma tag HTML, que é composta pelo nome da tag colocada entre sinais de menor e maior (< e >)
+Tags de cabeçalho: São usadas para definir diferentes níveis de cabeçalhos em um documento HTML, indicando a importância e hierarquia do conteúdo. Exemplos: <h1>, <h2>, <h3>, etc.
+
+Tags de parágrafo: São usadas para definir blocos de texto em parágrafos. Exemplo: <p>.
+
+Tags de lista: São usadas para criar listas, tanto ordenadas quanto não ordenadas. Exemplos: <ul> (lista não ordenada), <ol> (lista ordenada), <li> (item de lista).
+
+Tags de link: São usadas para criar links para outras páginas, arquivos ou seções no documento. Exemplo: <a>.
+
+Tags de imagem: São usadas para exibir imagens em uma página HTML. Exemplo: <img>.
+
+Tags de divisão: São usadas para criar seções ou contêineres para agrupar e organizar outros elementos HTML. Exemplo: <div>.
+
+Tags de formulário: São usadas para criar formulários interativos para coletar dados dos usuários. Exemplos: <form>, <input>, <button>, <select>, etc.
+
+Tags de tabela: São usadas para criar tabelas para exibir dados tabulares. Exemplos: <table>, <tr>, <td>, etc.
+
+Tags de estilo e script: São usadas para adicionar estilos CSS e scripts JavaScript a um documento HTML. Exemplos: <style>, <script>.
+
+Tags de cabeçalho e metadados: São usadas para fornecer informações sobre o documento HTML, como título, codificação de caracteres, descrição, etc. Exemplos: <head>, <title>, <meta>, etc.-->
+
+<div class="jogador">
+    <label>
+        Jogador:
+    </label>
+    <label id="jogador-selecionado">
+
+    </label>
+
+    <!-- cria uma estrutura básica em HTML para exibir informações relacionadas a um jogador. 
+        O primeiro elemento <label> exibe o texto "Jogador:" como um rótulo e o segundo elemento <label> (com o ID "jogador-selecionado") 
+        pode ser usado posteriormente para exibir informações dinâmicas sobre o jogador selecionado -->
+</div>
+
+<div class="vencedor">
+    <label>
+        Vencedor:
+    </label>
+    <label id="vencedor-selecionado">
+
+    </label>
+</div>
+
+
+<!-- Aqui criamos um elemento diferente, o button -->
+<div>
+    <button onclick="reiniciar()">
+        Reiniciar
+    </button>
+</div>
+
+
+</body>
+<!-- Aqui cria outro elemento diferente, o script, no final do  código para ter melhor desempenho ao linkar nosso JS -->
+<script src="./src/js/index.js">
+
+</script>
+
+</html>
